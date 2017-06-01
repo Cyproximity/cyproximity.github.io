@@ -1,0 +1,178 @@
+//Angular Main Animation Directive
+
+.ng-enter,.ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all 700ms ease-in-out;
+  -moz-transition:all 700ms ease-in-out;
+  -o-transition:all 700ms ease-in-out;
+  transition:all 700ms ease-in-out;
+}
+//entries
+.ng-enter {
+  opacity: 0;
+  overflow:hidden;
+}
+
+.ng-enter-active {
+  opacity: 1;
+  overflow: auto;
+}
+//leavers
+.ng-leave {
+  opacity: 1;
+  overflow:hidden;
+
+}
+
+.ng-leave-active {
+  opacity: 0;
+  overflow:hidden;
+}
+
+/* SVG */
+
+// designings skills
+.box-bg{ fill: #fff; }
+#basebg {
+  rect{ fill:#A0B1B9; }
+
+}
+#photoshop {
+  #border {
+    fill:#607D8B;
+  }
+  #PS {
+    path {
+      fill: #607D8B;
+    }
+  }
+}
+#illustrator {
+  #border-ai {
+    fill:#607D8B;
+  }
+  #ai {
+    .c-ai {
+      fill: #607D8B;
+    }
+  }
+}
+/// Coding Skills
+#blocks{
+  rect {
+    fill: #fff;
+  }
+}
+/// html5
+#HTML5 {
+  .white {
+    fill: #fff;
+  }
+  .five {
+    fill: #607D8B;
+    transition: fill ease 400ms;
+  }
+  &:hover {
+    .five {
+      fill: #fff;
+    }
+    .box {
+      transition: fill ease 400ms;
+      fill: #F16529;
+    }
+  }
+}
+
+//css
+#CSS {
+  .box {
+    fill: #fff;
+    transition: fill ease 400ms;
+
+  }
+  .tcss {
+    fill: #fff;
+  }
+  .three {
+    fill: #607D8B;
+    transition: fill ease 400ms;
+
+  }
+  .shad {
+    fill:#A0B1B9;
+    transition: fill ease 400ms;
+
+  }
+  &:hover {
+    .box {
+      fill: #1572B6;
+    }
+    .shad {
+      fill: #33A9DC;
+    }
+    .three {
+      fill: #fff;
+    }
+  }
+}
+
+/// JS
+
+#JS {
+  rect {
+    fill: #fff;
+    transition: fill ease 400ms;
+  }
+  path {
+    fill: #607D8B;
+    transition: fill ease 400ms;
+  }
+  &:hover {
+    #js-bg {
+      fill: #F0DB4F;
+    }
+    path {
+      fill: #323330;
+    }
+  }
+}
+
+
+///php
+#php {
+  path {
+    fill: #fff;
+    transition: fill ease 400ms;
+  }
+  &:hover {
+    path{
+      fill: #6082BB;
+      stroke:#fff;
+      stroke-length: 2px;
+    }
+  }
+}
+
+//animation keyframes
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+}

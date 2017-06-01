@@ -1,0 +1,49 @@
+.ng-enter, .ng-leave { position: absolute; left: 0; right: 0; -webkit-transition: all 700ms ease-in-out; -moz-transition: all 700ms ease-in-out; -o-transition: all 700ms ease-in-out; transition: all 700ms ease-in-out; }
+
+.ng-enter { opacity: 0; overflow: hidden; }
+
+.ng-enter-active { opacity: 1; overflow: auto; }
+
+.ng-leave { opacity: 1; overflow: hidden; }
+
+.ng-leave-active { opacity: 0; overflow: hidden; }
+
+/* SVG */
+.box-bg { fill: #fff; }
+
+#basebg rect { fill: #A0B1B9; }
+
+#photoshop #border { fill: #607D8B; }
+#photoshop #PS path { fill: #607D8B; }
+
+#illustrator #border-ai { fill: #607D8B; }
+#illustrator #ai .c-ai { fill: #607D8B; }
+
+#blocks rect { fill: #fff; }
+
+#HTML5 .white { fill: #fff; }
+#HTML5 .five { fill: #607D8B; transition: fill ease 400ms; }
+#HTML5:hover .five { fill: #fff; }
+#HTML5:hover .box { transition: fill ease 400ms; fill: #F16529; }
+
+#CSS .box { fill: #fff; transition: fill ease 400ms; }
+#CSS .tcss { fill: #fff; }
+#CSS .three { fill: #607D8B; transition: fill ease 400ms; }
+#CSS .shad { fill: #A0B1B9; transition: fill ease 400ms; }
+#CSS:hover .box { fill: #1572B6; }
+#CSS:hover .shad { fill: #33A9DC; }
+#CSS:hover .three { fill: #fff; }
+
+#JS rect { fill: #fff; transition: fill ease 400ms; }
+#JS path { fill: #607D8B; transition: fill ease 400ms; }
+#JS:hover #js-bg { fill: #F0DB4F; }
+#JS:hover path { fill: #323330; }
+
+#php path { fill: #fff; transition: fill ease 400ms; }
+#php:hover path { fill: #6082BB; stroke: #fff; stroke-length: 2px; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+@keyframes pulse { from { transform: scale3d(1, 1, 1); }
+  50% { transform: scale3d(1.05, 1.05, 1.05); }
+  to { transform: scale3d(1, 1, 1); } }
+.pulse { animation-name: pulse; }

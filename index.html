@@ -1,0 +1,85 @@
+<!--
+   _____                _     _                           _   _
+  / ____|              | |   | |     /\                  | | (_)
+ | |  __  ___ _ __ __ _| | __| |    /  \   __ _ _   _ ___| |_ _ _ __
+ | | |_ |/ _ \ '__/ _` | |/ _` |   / /\ \ / _` | | | / __| __| | '_ \
+ | |__| |  __/ | | (_| | | (_| |  / ____ \ (_| | |_| \__ \ |_| | | | |
+  \_____|\___|_|  \__,_|_|\__,_| /_/    \_\__, |\__,_|___/\__|_|_| |_|
+                                           __/ |
+                                          |___/
+  Looking at my codes?
+    feel free
+      you can adopt me or hire me!
+        -> gerald.agustin09@gmail.com
+
+-->
+<!DOCTYPE html>
+<html lang="en" ng-app="CoreApplication">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!--  maximum-scale=1, user-scalable=no -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerald Agustin ~ Porfolio</title>
+  <meta name="description" content="My Portfolio and based in Las Piñas, PH." />
+  <meta name="author" content="Gerald Agustin" />
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="bower_components/bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+  <!--
+  <link rel="stylesheet" href="assets/css/mobile.css" /> // for mobile devices
+  -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/animation.css" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+  <!--
+
+  - fonts
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,200' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,500italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+  -->
+
+</head>
+<body>
+  <!-- Application -->
+  <div ng-controller="coreController as core">
+    <sidebar-navigation></sidebar-navigation>
+    <div ui-view class="viewport-setting"></div>
+  </div>
+
+  <!-- JScripts / Core Modules -->
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-touch/angular-touch.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-resource/angular-resource.min.js"></script>
+  <script type="text/javascript" src="bower_components/highcharts/js/highcharts.js"></script>
+  <script type="text/javascript" src="bower_components/highcharts/js/highcharts-more.js"></script>
+  <script type="text/javascript" src="bower_components/highcharts/js/modules/solid-gauge.js"></script>
+
+  <!-- Application Modules -->
+  <script type="text/javascript" src="assets/scripts/app.main.js"></script>
+  <script type="text/javascript" src="assets/scripts/app.core.js"></script>
+  <script type="text/javascript" src="assets/scripts/config/app.config.routes.js"></script>
+
+  <!-- app directives -->
+  <script type="text/javascript" src="assets/scripts/directives/app.directive.sidebar.js"></script>
+  <script type="text/javascript" src="assets/scripts/directives/app.directive.background.js"></script>
+  <script type="text/javascript" src="assets/scripts/directives/app.directive.chart.js"></script>
+
+  <!-- app services -->
+  <script type="text/javascript" src="assets/scripts/services/factory.information.js"></script>
+  <script type="text/javascript" src="assets/scripts/services/factory.page.js"></script>
+
+  <!-- app controllers -->
+  <script type="text/javascript" src="assets/scripts/controllers/controller.core.js"></script>
+
+  <!-- end of application -->
+</body>
+</html>
